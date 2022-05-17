@@ -5,7 +5,7 @@ import java.time.LocalDate;
 import java.time.Month;
 
 
-public abstract class  Elemiszer {
+public abstract class  Elemiszer extends LejartException{
     private String Nev,gyarto;
     private LocalDate Datum;
 
@@ -14,6 +14,8 @@ public abstract class  Elemiszer {
               this.Nev = Nev;
         this.gyarto = gyarto;
         this.Datum = Datum;
+        }else{
+            New LejartException;
         }
       
     }
