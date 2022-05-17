@@ -1,0 +1,1 @@
+Szűcs Richárd Dávid
