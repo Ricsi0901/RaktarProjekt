@@ -1,14 +1,26 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package modell;
 
-/**
- *
- * @author vizsgaszf
- */
-public class Elemiszer {
-    
+import java.time.LocalDate;
+import java.time.Month;
+
+
+public abstract class  Elemiszer {
+    private String Nev,gyarto;
+    private LocalDate Datum;
+
+    public Elemiszer(String Nev, String gyarto, LocalDate Datum) {
+        if(LocalDate.now().isAfter(Datum)){
+              this.Nev = Nev;
+        this.gyarto = gyarto;
+        this.Datum = Datum;
+        }
+      
+    }
+
+    public Elemiszer(String Nev, String gyarto) {
+        this(Nev,gyarto,LocalDate.ofYearDay(LocalDate.now(),365));
+        
+    }
 }
+

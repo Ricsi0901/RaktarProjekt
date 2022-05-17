@@ -1,5 +1,5 @@
 
-package main;
+package raktarprojekt;
 
 
 public class RaktarProjekt {
